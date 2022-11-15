@@ -1,0 +1,94 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+  margin: 10px;
+  padding: 50px;
+  text-align: center;
+}
+
+form {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.todo-input {
+  width: 200px;
+  padding: 2px;
+}
+
+.todo-button {
+  width: 75px;
+  color: black
+  background-color: grey
+  border: #eeecec solid;
+  border-width: 0.1em;
+  padding: 5px 0px 5px 0px;
+  margin-left: 20px;
+}
+
+.todo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 600px;
+}
+
+.todo-list {
+  min-width: 80%;
+  list-style: none;
+}
+
+.todo {
+  display: flex;
+  margin: 0.5rem;
+  font-size: 14px;
+  color: #000000;
+  border: black  solid;
+  border-width: 0.1em;  
+  padding: 10px;
+  }
+
+.todo li {
+  flex: 1;
+  padding-left: 20px;
+  padding-top: 5px;
+}
+
+.complete-btn {
+  content: "\f14a";
+  background-color: #ffffff;
+  color: #5089c2ea;
+  border: none;
+  padding: 5px;
+  cursor: pointer;
+  font-family: FontAwesome;
+}
+
+.trash-btn {
+  background-color: #ffffff;
+  color: rgb(177, 42, 42);
+  border: none;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.fa-trash-alt,
+.fa-check-square {
+  pointer-events: none;
+}
+
+.completed {
+  text-decoration: line-through;
+  opacity: 0.5;
+}
+
+.completed .complete-btn {
+  content: "\f0c8";
+  font-family: FontAwesome;
+}
+
+.complete-btn {
+  margin-top: 5px;
+}
